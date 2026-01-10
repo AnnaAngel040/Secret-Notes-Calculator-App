@@ -1,16 +1,55 @@
-# calculator_vault
+# 🔐 Calculator Vault – Secure Notes App
 
-A new Flutter project.
+Calculator Vault is a Flutter-based privacy-focused notes application that disguises itself as a simple calculator. Behind the calculator interface lies a secure notes vault, accessible only after authentication.
 
-## Getting Started
+The app is designed to demonstrate **local authentication, offline-first storage, and clean UI theming**, making it ideal for learning Flutter + Hive or showcasing a practical privacy-oriented app.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## ✨ Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- 🧮 **Calculator-style login screen**
+- 🔐 **Authentication gate** using local storage
+- 📝 **Create, edit, delete notes**
+- 🔍 **Instant search through notes**
+- 💾 **Offline-first storage** using Hive
+- 🎨 **Custom dark theme (Rosé Pine inspired UI)**
+- 🚪 **Logout support**
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 🛠️ Tech Stack
+
+- **Flutter** (Dart)
+- **Hive & Hive Flutter** – local NoSQL storage
+- **Material UI**
+- **Stateful Widgets**
+
+---
+
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Flutter SDK installed
+- Android Studio / VS Code
+- Emulator or physical device
+
+### Run Locally
+
+```bash
+git clone https://github.com/your-username/calculator_vault.git
+cd calculator_vault
+flutter pub get
+flutter run
+
+🔒 Data Storage
+
+Notes are stored locally using Hive
+
+No cloud sync (by design)
+
+User session is stored securely in a local auth box
+
