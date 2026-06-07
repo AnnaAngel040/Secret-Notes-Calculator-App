@@ -3,9 +3,13 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'calculator/calculator_screen.dart';
 
 
+import 'models/note.dart';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Hive.initFlutter();
+
+  Hive.registerAdapter(NoteAdapter());
 
   await Hive.openBox('authBox');
   await Hive.openBox('notesBox'); // ✅ FIXED

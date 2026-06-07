@@ -111,7 +111,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
       display = "";
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (_) => LoginPage()),
+        MaterialPageRoute(builder: (_) => const LoginPage()),
       );
       return;
     }

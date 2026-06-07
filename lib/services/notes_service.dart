@@ -1,17 +1,18 @@
 import 'package:hive_flutter/hive_flutter.dart';
+import '../models/note.dart';
 
 class NotesService {
   final Box box = Hive.box('notesBox');
 
-  List<String> getNotes() {
-    return box.values.map((e) => e.toString()).toList();
+  List<Note> getNotes() {
+    return box.values.cast<Note>().toList();
   }
 
-  void addNote(String note) {
+  void addNote(Note note) {
     box.add(note);
   }
 
-  void editNote(int index, String note) {
+  void editNote(int index, Note note) {
     box.putAt(index, note);
   }
 
